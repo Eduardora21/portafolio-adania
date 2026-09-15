@@ -36,18 +36,22 @@
 </head>
 <body class="bg-rose-pastel text-charcoal font-sans antialiased selection:bg-rose-accent/30">
 
-  <!-- Navegación Responsiva -->
+<!-- Navegación Responsiva Optimizada -->
   <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-rose-accent/20 z-50">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-2">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
       
-      <!-- Logo + Nombre -->
-      <a href="#inicio" class="flex items-center gap-2 shrink-0">
+      <!-- Logo + Nombre (Optimizado para teléfonos) -->
+      <a href="#inicio" class="flex items-center gap-2 shrink-0 mr-2 sm:mr-0">
         <img src="img/favicon.jpg" alt="Logo Adania Campos" class="w-8 h-8 rounded-full object-cover border border-rose-accent/30">
-        <span class="font-serif font-bold text-base sm:text-xl text-rose-accent whitespace-nowrap">Adania Campos</span>
+        <!-- En móvil muestra solo Adania, en escritorio Adania Campos -->
+        <span class="font-serif font-bold text-base sm:text-xl text-rose-accent whitespace-nowrap">
+          <span class="sm:hidden">Adania</span>
+          <span class="hidden sm:inline">Adania Campos</span>
+        </span>
       </a>
 
-      <!-- Menú con Scroll Horizontal en pantallas pequeñas -->
-      <div class="flex items-center space-x-3 sm:space-x-6 text-xs sm:text-sm font-medium text-gray-600 overflow-x-auto no-scrollbar py-1">
+      <!-- Menú con margen de respiración -->
+      <div class="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-sm font-medium text-gray-600 overflow-x-auto no-scrollbar py-1">
         <a href="#inicio" class="hover:text-rose-accent transition-colors whitespace-nowrap">Inicio</a>
         <a href="#sobre-mi" class="hover:text-rose-accent transition-colors whitespace-nowrap">Sobre mí</a>
         <a href="#experiencia" class="hover:text-rose-accent transition-colors whitespace-nowrap">Experiencia</a>
@@ -56,7 +60,6 @@
 
     </div>
   </nav>
-
   <!-- Hero Section -->
   <section id="inicio" class="min-h-screen flex items-center justify-center pt-24 sm:pt-20 px-6">
     <div class="max-w-3xl mx-auto text-center space-y-6">
