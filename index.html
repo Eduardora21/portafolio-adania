@@ -36,22 +36,22 @@
 </head>
 <body class="bg-rose-pastel text-charcoal font-sans antialiased selection:bg-rose-accent/30">
 
-<!-- Navegación Responsiva Optimizada -->
+  <!-- Navegación Responsiva Optimizada -->
   <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-rose-accent/20 z-50">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between gap-4">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-2.5 flex items-center justify-between gap-3">
       
-      <!-- Logo + Nombre Completo en 2 líneas para móvil -->
+      <!-- Logo + Nombre (Dos líneas en móvil, Una línea horizontal en PC) -->
       <a href="#inicio" class="flex items-center gap-2 shrink-0 pr-2">
         <img src="img/favicon.jpg" alt="Logo Adania Campos" class="w-8 h-8 rounded-full object-cover border border-rose-accent/30">
         
-        <div class="flex flex-col leading-none">
-          <span class="font-serif font-bold text-sm sm:text-lg text-rose-accent tracking-wide">Adania</span>
-          <span class="font-serif font-semibold text-[10px] sm:text-xs text-rose-accent/80 tracking-widest uppercase">Campos</span>
+        <div class="flex flex-col sm:flex-row sm:items-baseline sm:gap-1.5 leading-none sm:leading-normal">
+          <span class="font-serif font-bold text-sm sm:text-xl text-rose-accent tracking-wide">Adania</span>
+          <span class="font-serif font-semibold sm:font-bold text-[9px] sm:text-xl text-rose-accent/80 sm:text-rose-accent tracking-widest sm:tracking-wide uppercase sm:normal-case -mt-0.5 sm:mt-0">Campos</span>
         </div>
       </a>
 
-      <!-- Menú con margen de respiración -->
-      <div class="flex items-center space-x-4 sm:space-x-6 text-xs sm:text-sm font-medium text-gray-600 overflow-x-auto no-scrollbar py-1">
+      <!-- Menú con margen de respiración y scroll en móviles -->
+      <div class="flex items-center space-x-3 sm:space-x-6 text-xs sm:text-sm font-medium text-gray-600 overflow-x-auto no-scrollbar py-1">
         <a href="#inicio" class="hover:text-rose-accent transition-colors whitespace-nowrap">Inicio</a>
         <a href="#sobre-mi" class="hover:text-rose-accent transition-colors whitespace-nowrap">Sobre mí</a>
         <a href="#experiencia" class="hover:text-rose-accent transition-colors whitespace-nowrap">Experiencia</a>
@@ -60,6 +60,7 @@
 
     </div>
   </nav>
+
   <!-- Hero Section -->
   <section id="inicio" class="min-h-screen flex items-center justify-center pt-24 sm:pt-20 px-6">
     <div class="max-w-3xl mx-auto text-center space-y-6">
